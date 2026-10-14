@@ -1,0 +1,25 @@
+# Current funded projects and working papers (shown on Home and Research).
+working_papers:
+  - title: "Decentralized Coordination in a Dynamic Grid: A Complexity Economics Theory of Transactive Energy"
+    detail: "Manuscript, November 2025."
+    status: "Under review"
+
+projects:
+  - title: "Improving Market Prices and Adequacy for Competitive Transformation (IMPACT)"
+    funder: "U.S. Department of Energy, Grid Deployment Office"
+    role: "Co-Principal Investigator"
+    dates: "2026–2029"
+    amount: "$2,000,000"
+  - title: "Strengthening American Infrastructure: Integration of Electric Vehicles and the Electric Grid (eVibes)"
+    funder: "National Science Foundation"
+    role: "Lead Principal Investigator"
+    dates: "2023–2027"
+    amount: "$750,000"
+    description: "Electric Vehicle Integration to Power Infrastructure by Behavioral, Economic and Sociotechnical Modeling."
+  - title: "Integrating Academic Research into State Utility Regulatory Capacity"
+    funder: "Alfred P. Sloan Foundation"
+    role: "Principal Investigator"
+    dates: "2024–2027"
+    amount: "$250,000"
+  - title: "Transactive Energy Services System (TESS) project"
+    funder: "Post Road Foundation, funded by the U.S. Department of Energy Office of Electricity, Connected Communities"

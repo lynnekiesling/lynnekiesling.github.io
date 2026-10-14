@@ -1,0 +1,7 @@
+# Authored books, then edited volumes.
+authored:
+  - { kind: book, authors: "Kiesling, Lynne", year: 2021, title: "The Essential Ronald Coase", detail: "Vancouver: Fraser Institute", url: "https://www.essentialscholars.org/coase" }
+  - { kind: book, authors: "Kiesling, Lynne", year: 2009, title: "Deregulation, Innovation, and Market Liberalization: Electricity Restructuring in a Constantly Evolving Environment", detail: "London: Routledge" }
+edited:
+  - { kind: book, authors: "Greif, Avner, Lynne Kiesling, and John V. C. Nye, eds", year: 2015, title: "Institutions, Innovation, and Industrialization: Essays in Economic History and Development", detail: "Princeton University Press", url: "https://press.princeton.edu/books/paperback/9780691202730/institutions-innovation-and-industrialization" }
+  - { kind: book, authors: "Kiesling, Lynne, and Andrew N. Kleit, eds", year: 2009, title: "Electricity Restructuring: The Texas Experience", detail: "Washington, DC: AEI Press" }

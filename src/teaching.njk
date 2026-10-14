@@ -1,0 +1,49 @@
+---
+layout: base.njk
+title: Teaching & Advisory
+permalink: /teaching/
+description: Teaching, advisory roles, policy research, and public writing by Lynne Kiesling.
+---
+<h1>Teaching &amp; Advisory</h1>
+<p class="page-intro">Teaching, national advisory service, and policy work that bridges academic research and regulatory practice.</p>
+
+<h2>Teaching</h2>
+<h3>Graduate</h3>
+<ul class="plain">
+  {% for t in teaching.graduate %}<li>{{ t }}</li>{% endfor %}
+</ul>
+<h3>Undergraduate</h3>
+<ul class="plain">
+  {% for t in teaching.undergraduate %}<li>{{ t }}</li>{% endfor %}
+</ul>
+
+<h2>Advisory roles</h2>
+<ul class="plain">
+  {% for r in leadership.advisory_current %}
+  <li>{{ r.title }} <span class="dates">· {{ r.dates }}</span></li>
+  {% endfor %}
+</ul>
+<details>
+  <summary>Past advisory roles</summary>
+  <ul class="plain">
+    {% for r in leadership.advisory_past %}
+    <li>{{ r.title }} <span class="dates">· {{ r.dates }}</span></li>
+    {% endfor %}
+  </ul>
+</details>
+
+<h2>Policy research and reports</h2>
+<ol class="refs">
+  {% for item in policy.reports %}{% include "ref.njk" %}{% endfor %}
+</ol>
+
+<h2>Selected op-eds and media</h2>
+<ol class="refs">
+  {% for item in policy.media %}{% include "ref.njk" %}{% endfor %}
+</ol>
+<p>Owner and editor of <a href="https://knowledgeproblem.com">Knowledge Problem</a> (since 2002).</p>
+
+<h2>Professional service</h2>
+<ul class="plain">
+  {% for s in teaching.service %}<li>{{ s | safe }}</li>{% endfor %}
+</ul>

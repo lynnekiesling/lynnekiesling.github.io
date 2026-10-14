@@ -1,0 +1,47 @@
+---
+layout: base.njk
+title: Research
+permalink: /research/
+description: Publications, working papers, and current projects of Lynne Kiesling.
+---
+<h1>Research</h1>
+<p class="page-intro">Electricity market design, regulatory institutions, transactive energy, and technological change. Earlier work is on <a href="https://ssrn.com/author=240214" rel="noopener">SSRN</a> and <a href="https://scholar.google.com/citations?user=3QY5AmsAAAAJ&hl=en" rel="noopener">Google Scholar</a>.</p>
+
+<h2>Working papers and current projects</h2>
+<ul class="plain">
+  {% for wp in projects.working_papers %}
+  <li>
+    <span class="item-title">{{ wp.title }}</span>{% if wp.status %}<span class="status">{{ wp.status }}</span>{% endif %}
+    <span class="item-desc meta">{{ wp.detail }}</span>
+  </li>
+  {% endfor %}
+  {% for p in projects.projects %}
+  <li>
+    <span class="item-title">{{ p.title }}</span>
+    <span class="item-desc">{{ p.funder }}{% if p.role %}. {{ p.role }}{% endif %}{% if p.dates %}, {{ p.dates }}{% endif %}{% if p.amount %}. {{ p.amount }}{% endif %}.</span>
+    {% if p.description %}<span class="item-desc meta">{{ p.description }}</span>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Peer-reviewed publications</h2>
+{% for group in publications | groupByYear %}
+<h3 class="year-label">{{ group.year }}</h3>
+<ol class="refs">
+  {% for item in group.entries %}{% include "ref.njk" %}{% endfor %}
+</ol>
+{% endfor %}
+
+<h2>Books</h2>
+<ol class="refs">
+  {% for item in books.authored %}{% include "ref.njk" %}{% endfor %}
+</ol>
+<h3>Edited volumes</h3>
+<ol class="refs">
+  {% for item in books.edited %}{% include "ref.njk" %}{% endfor %}
+</ol>
+
+<h2>Selected book chapters and other publications</h2>
+<ol class="refs">
+  {% for item in chapters %}{% include "ref.njk" %}{% endfor %}
+</ol>

@@ -1,0 +1,118 @@
+/* Lynne Kiesling — site styles
+   Palette (confirmed by Lynne):
+     --kp-logo-green  #8FBBAF  original logo green: DECORATIVE ONLY (too light for text on light backgrounds)
+     --kp-green       #167D64  main accent for text-level green: links, labels, buttons, home lockup
+     --kp-gray        #6F6D71  original charcoal: metadata, captions, footer, secondary accents */
+:root {
+  --kp-logo-green: #8FBBAF;
+  --kp-green: #167D64;
+  --kp-gray: #6F6D71;
+  --tint: #f0f6f4;            /* very light logo-green tint for callouts/hover */
+  --rule: #d9d8da;            /* light tint of the charcoal, for dividers */
+  --bg: #fbfbf9;
+  --text: #1f1e20;
+  --measure: 44rem;
+  --serif: Charter, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --kp-green: #8FBBAF;      /* #167D64 is too dark on a dark background; use the logo green here */
+    --kp-gray: #b0aeb2;
+    --tint: #262b29;
+    --rule: #3a393c;
+    --bg: #1e1d1f;
+    --text: #e8e7e8;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { font-size: 106.25%; -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  line-height: 1.6;
+}
+
+.wrap { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem; }
+
+a { color: var(--kp-green); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--kp-green); outline-offset: 2px; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.skip { position: absolute; left: -999px; top: 0; background: var(--bg); padding: 0.5rem 1rem; z-index: 10; }
+.skip:focus { left: 0; }
+
+/* Header */
+.site-header { border-top: 5px solid var(--kp-logo-green); border-bottom: 1px solid var(--rule); }
+.header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 2rem; padding-top: 0.9rem; padding-bottom: 0.8rem; }
+.wordmark { display: inline-flex; align-items: center; gap: 0.7rem; font-family: var(--serif); font-size: 1.35rem; font-weight: 600; letter-spacing: 0.01em; color: var(--text); text-decoration: none; }
+.wordmark .mark { height: 2.1rem; width: auto; color: var(--kp-green); flex: none; }
+.nav { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.3rem 1.3rem; font-family: var(--sans); font-size: 0.82rem; letter-spacing: 0.02em; }
+.nav a { color: var(--kp-gray); text-decoration: none; padding: 0.2rem 0; border-bottom: 2px solid transparent; }
+.nav a:hover { color: var(--text); border-bottom-color: var(--kp-logo-green); }
+.nav a[aria-current="page"] { color: var(--text); border-bottom-color: var(--kp-green); }
+
+/* Main */
+main { padding-top: 2.2rem; padding-bottom: 3rem; }
+h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 0.3rem; font-weight: 600; }
+h2 { font-family: var(--sans); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--kp-green); margin: 2.6rem 0 0.9rem; padding-bottom: 0.4rem; border-bottom: 2px solid var(--kp-logo-green); }
+h3 { font-size: 1.02rem; font-weight: 600; margin: 1.6rem 0 0.4rem; }
+p { margin: 0 0 1rem; }
+.lede { font-size: 1.12rem; color: var(--kp-gray); margin-bottom: 1.2rem; }
+.meta, .dates { font-family: var(--sans); font-size: 0.8rem; color: var(--kp-gray); }
+.page-intro { color: var(--kp-gray); margin-bottom: 0.5rem; }
+
+/* Home hero: logo lockup (green) beside the tagline and primary links */
+.hero-top { display: grid; grid-template-columns: 11.5rem 1fr; gap: 1rem 2.4rem; align-items: center; margin-bottom: 1.8rem; }
+.lockup { display: block; width: 100%; height: auto; color: var(--kp-green); }
+.hero-text .lede { font-size: 1.25rem; line-height: 1.45; color: var(--text); }
+.quicklinks { font-family: var(--sans); font-size: 0.85rem; display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin: 0.9rem 0 0; padding: 0; list-style: none; }
+.button { display: inline-block; font-family: var(--sans); font-size: 0.85rem; padding: 0.45rem 0.9rem; border: 1px solid var(--kp-green); color: var(--kp-green); text-decoration: none; border-radius: 3px; }
+.button:hover { background: var(--kp-green); color: var(--bg); }
+
+/* Headshot (optional): add <img class="headshot"> before the first bio paragraph */
+.headshot { float: right; width: 17rem; max-width: 45%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; margin: 0.25rem 0 0.8rem 1.6rem; border-bottom: 4px solid var(--kp-logo-green); }
+
+/* Lists */
+ul.plain, ol.refs { margin: 0; padding: 0; list-style: none; }
+ul.plain > li { margin: 0 0 0.9rem; }
+ol.refs > li.ref { margin: 0 0 0.85rem; padding-left: 1rem; border-left: 2px solid var(--rule); }
+ol.refs > li.ref:hover { border-left-color: var(--kp-logo-green); }
+.year-label { font-family: var(--sans); font-size: 0.8rem; font-weight: 600; color: var(--kp-gray); margin: 1.4rem 0 0.5rem; }
+.year-label:first-of-type { margin-top: 0.4rem; }
+.item-title { font-weight: 600; }
+.item-desc { display: block; margin-top: 0.15rem; }
+.status { font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--kp-gray); border: 1px solid var(--rule); border-radius: 2px; padding: 0.05rem 0.35rem; margin-left: 0.4rem; white-space: nowrap; }
+
+details { margin-top: 1rem; }
+summary { cursor: pointer; font-family: var(--sans); font-size: 0.85rem; color: var(--kp-green); }
+
+.callout { background: var(--tint); border-left: 3px solid var(--kp-logo-green); padding: 0.8rem 1rem; margin: 1.2rem 0; font-size: 0.95rem; }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--rule); padding: 1.6rem 0 2.4rem; font-family: var(--sans); font-size: 0.8rem; color: var(--kp-gray); }
+.site-footer p { margin: 0 0 0.5rem; }
+.site-footer a { color: var(--kp-green); }
+.footer-mark { display: block; height: 2.6rem; width: auto; color: var(--kp-gray); margin-bottom: 0.9rem; }
+
+@media (max-width: 34rem) {
+  html { font-size: 100%; }
+  h1 { font-size: 1.75rem; }
+  .header-inner { flex-direction: column; align-items: flex-start; }
+  .hero-top { grid-template-columns: 1fr; }
+  .lockup { width: 9.5rem; }
+  .headshot { float: none; display: block; width: 100%; max-width: 100%; margin: 0 0 1rem; }
+}
+
+@media print {
+  .site-header, .site-footer, .skip { display: none; }
+  body { background: #fff; color: #000; }
+  a { color: #000; }
+}

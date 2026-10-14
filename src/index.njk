@@ -1,0 +1,62 @@
+---
+layout: base.njk
+title: Lynne Kiesling
+permalink: /
+---
+<section class="hero">
+  <div class="hero-top">
+    {% svg "lockup", "lockup", "Lynne Kiesling" %}
+    <div class="hero-text">
+      <h1 class="sr-only">{{ site.name }}</h1>
+      <p class="lede">{{ site.tagline }}</p>
+      <p><a class="button" href="{{ site.cv_pdf }}">Download CV (PDF)</a></p>
+      <ul class="quicklinks">
+        <li><a href="https://scholar.google.com/citations?user=3QY5AmsAAAAJ&hl=en" rel="noopener">Google Scholar</a></li>
+        <li><a href="https://ssrn.com/author=240214" rel="noopener">SSRN</a></li>
+        <li><a href="https://orcid.org/0000-0002-6854-2653" rel="noopener">ORCID</a></li>
+        <li><a href="https://knowledgeproblem.com" rel="noopener">Knowledge Problem</a></li>
+      </ul>
+    </div>
+  </div>
+  <img class="headshot" src="/assets/img/lynne-kiesling.jpg" alt="Portrait of Lynne Kiesling" width="800" height="600">
+  <p>
+    Lynne Kiesling is an economist specializing in electricity market design, regulatory institutions, and the economics of technological change in network industries. Drawing on the economics of knowledge and information, institutional and transaction cost analysis, mechanism design, and complexity theory, she analyzes how regulatory frameworks adapt—or fail to adapt—when technology changes faster than the institutions governing it. Her empirical and theoretical work spans wholesale power market design and performance, resource adequacy, transactive energy systems, distributed energy resources, and price-based automation at varying scales in power systems.
+  </p>
+  <p>
+    As Director of Northwestern’s Institute for Regulatory Law and Economics, she leads a translational research program connecting academic scholarship to the practice of state utility regulation. As External Faculty at the Santa Fe Institute, she applies complexity economics to the co-evolution of energy technology and regulatory institutions. Her policy work—including analysis for the American Enterprise Institute and, through 2025, the U.S. Department of Energy’s Electricity Advisory Committee—bridges academic rigor and regulatory practice, engaging audiences from state commissions to FERC. She writes regularly at <a href="https://knowledgeproblem.com">Knowledge Problem</a>.
+  </p>
+</section>
+
+<h2>Current work</h2>
+<ul class="plain">
+  {% for wp in projects.working_papers %}
+  <li>
+    <span class="item-title">{{ wp.title }}</span>{% if wp.status %}<span class="status">{{ wp.status }}</span>{% endif %}
+    <span class="item-desc meta">{{ wp.detail }}</span>
+  </li>
+  {% endfor %}
+  {% for p in projects.projects %}
+  <li>
+    <span class="item-title">{{ p.title }}</span>
+    <span class="item-desc meta">{{ p.funder }}{% if p.role %} · {{ p.role }}{% endif %}{% if p.dates %} · {{ p.dates }}{% endif %}</span>
+  </li>
+  {% endfor %}
+</ul>
+<p><a href="/research/">All research →</a></p>
+
+<h2>Current appointments</h2>
+<ul class="plain">
+  {% for a in appointments.current %}
+  <li>
+    <span class="item-title">{{ a.org }}</span>
+    {% for r in a.roles %}<span class="item-desc">{{ r.title }} <span class="dates">· {{ r.dates }}</span></span>{% endfor %}
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Education</h2>
+<ul class="plain">
+  {% for e in appointments.education %}
+  <li>{{ e.title }} <span class="dates">· {{ e.dates }}</span></li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,15 @@
+reports:
+  - { kind: plain, authors: "Kiesling, Lynne (lead author), et al", year: 2025, title: "Innovating Future Power Systems: From Vision to Action", detail: "Electricity Technology, Regulation, and Market Design Working Group, American Enterprise Institute, February" }
+  - { kind: plain, authors: "Kiesling, Lynne, and Michael Giberson", year: 2020, title: "Electric Competition in Texas: A Successful Model to Guide the Future", detail: "Conservative Texans for Energy Innovation, July" }
+  - { kind: plain, authors: "Kiesling, Lynne", year: 2020, title: "Innovation and Decentralized Energy Markets: Technologies and Institutions for a Clean and Prosperous Energy Future", detail: "Center for Growth and Opportunity, Utah State University, February" }
+  - { kind: plain, authors: "Kiesling, Lynne", year: 2016, title: "Alternatives to Net Metering: Grid Services Rate Design for Decentralized Electricity Markets", detail: "R Street Institute Policy Paper, February" }
+  - { kind: plain, authors: "Kiesling, Lynne", year: 2015, title: "Power Up: The Framework for a New Era of UK Energy Distribution", detail: "Adam Smith Institute Policy Paper, October" }
+  - { kind: plain, authors: "Kiesling, Lynne", year: 2015, title: "A Prosperous and Cleaner Future: Markets, Innovation, and Electricity Distribution for the 21st Century", detail: "Conservation Leadership Council Policy Paper, June" }
+  - { kind: plain, authors: "Kiesling, Lynne, and Vernon L. Smith", year: 2005, title: "A Market-Based Model for ISO-Sponsored Demand Response Programs", detail: "Center for the Advancement of Energy Markets–Distributed Energy Financial Group Study" }
+
+media:
+  - { authors: "Kiesling, Lynne, and Vernon Smith", year: 2021, title: "How Texas Electricity Regulators Can Use Markets to Make the Grid More Reliable", venue: "Dallas Morning News", note: "February 28" }
+  - { authors: "Giberson, Michael, and Lynne Kiesling", year: 2017, title: "The Need for Electricity Retail Market Reforms", venue: "Regulation", vol: "40(3–4): 34–40" }
+  - { authors: "Kiesling, Lynne", year: 2009, title: "Electric Intelligence: Establishing a Smart Grid Requires Regulatory Reform, Not Subsidies", venue: "Reason", note: "July" }
+  - { authors: "Kiesling, Lynne, and Vernon L. Smith", year: 2003, title: "Socket to California: Preventing Another Energy Crisis", venue: "Wall Street Journal", note: "October 28" }
+  - { authors: "Kiesling, Lynne, and Vernon L. Smith", year: 2003, title: "Demand, Not Supply", venue: "Wall Street Journal", note: "August 20" }

@@ -1,0 +1,47 @@
+current:
+  - org: "Northwestern University"
+    roles:
+      - { title: "Director, Institute for Regulatory Law & Economics (IRLE), Center on Law, Business, and Economics", dates: "June 2023–present" }
+      - { title: "Faculty Affiliate, Trienens Institute for Sustainability and Energy", dates: "October 2023–present" }
+      - { title: "Adjunct Professor, Trienens Institute for Sustainability and Energy", dates: "September 2020–present" }
+  - org: "University of Colorado Denver"
+    roles:
+      - { title: "Research Professor, College of Engineering, Design & Computing", dates: "June 2021–present" }
+  - org: "Santa Fe Institute"
+    roles:
+      - { title: "External Faculty; co-director, Electricity Working Group", dates: "August 2023–present" }
+  - org: "American Enterprise Institute"
+    roles:
+      - { title: "Nonresident Senior Fellow", dates: "February 2023–present" }
+  - org: "Pacing Energy"
+    roles:
+      - { title: "Co-Founder", dates: "July 2025–present" }
+  - org: "Abundance Institute"
+    roles:
+      - { title: "Fellow", dates: "February 2023–present" }
+  - org: "Knowledge Problem LLC"
+    roles:
+      - { title: "President", dates: "January 2019–present" }
+
+past:
+  - { title: "Co-Director, Institute for Regulatory Law & Economics, Northwestern University", dates: "2018–2023" }
+  - { title: "Visiting Professor, Engineering & Public Policy, Carnegie Mellon University", dates: "2019–2021" }
+  - { title: "Visiting Associate Professor, Economics, Purdue University", dates: "2017–2019" }
+  - { title: "Associate Professor of Instruction, Economics, Northwestern University", dates: "2010–2017" }
+  - { title: "Director, Electricity Policy Program, Searle Center, Northwestern University", dates: "2016–2017" }
+  - { title: "Visiting Senior Lecturer (sabbatical), Political Economy, King's College London", dates: "2014–2015" }
+  - { title: "Director of Economic Policy, Reason Foundation", dates: "2001–2003" }
+  - { title: "Assistant Professor of Economics, College of William and Mary", dates: "1992–1996" }
+
+education:
+  - { title: "Ph.D., Economics, Northwestern University", dates: "1993" }
+  - { title: "B.S., Economics, Miami University (cum laude, Phi Beta Kappa)", dates: "1987" }
+
+awards:
+  - { title: "Lone Mountain Fellowship, Property & Environment Research Center", dates: "2017" }
+  - { title: "Invited Classical Liberalism Speaker, Whitman College", dates: "2016–2017" }
+  - { title: "ISEN Booster Grant, Institute for Sustainability and Energy, Northwestern University", dates: "2014–2015" }
+  - { title: "Research Grant, Searle Center on Law, Regulation, and Economic Growth, Northwestern University", dates: "2008" }
+  - { title: "Research Grants, International Foundation for Research in Experimental Economics", dates: "2003, 2005, 2006" }
+  - { title: "Research Grants, Searle Fund for Policy Research", dates: "2003–2007" }
+  - { title: "Gerschenkron Prize Nominee, Economic History Association", dates: "1994" }

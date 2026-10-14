@@ -1,0 +1,23 @@
+name: "Lynne Kiesling"
+tagline: "Economist: electricity markets, regulatory institutions, and technological change"
+description: "Lynne Kiesling is an economist specializing in electricity market design, regulatory institutions, and the economics of technological change in network industries."
+url: "https://lynnekiesling.com"
+emails:
+  - "lynne@knowledgeproblem.com"
+  - "lynne.kiesling@northwestern.edu"
+nav:
+  - { label: "Home", url: "/" }
+  - { label: "Research", url: "/research/" }
+  - { label: "Leadership & Convening", url: "/leadership/" }
+  - { label: "Teaching & Advisory", url: "/teaching/" }
+  - { label: "CV", url: "/cv/" }
+links:
+  - { label: "Knowledge Problem", url: "https://knowledgeproblem.com" }
+  - { label: "Google Scholar", url: "https://scholar.google.com/citations?user=3QY5AmsAAAAJ&hl=en" }
+  - { label: "SSRN", url: "https://ssrn.com/author=240214" }
+  - { label: "ORCID", url: "https://orcid.org/0000-0002-6854-2653" }
+  - { label: "LinkedIn", url: "https://www.linkedin.com/in/lynnekiesling/" }
+  - { label: "YouTube", url: "https://www.youtube.com/channel/UCMpfDsqBQtAUysp-Ohyx6Jw" }
+  - { label: "X / Twitter", url: "https://twitter.com/knowledgeprob" }
+cv_pdf: "/assets/Lynne-Kiesling-CV.pdf"
+cv_date: "October 2026"

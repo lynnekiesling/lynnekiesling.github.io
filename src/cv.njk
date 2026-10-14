@@ -1,0 +1,33 @@
+---
+layout: base.njk
+title: CV
+permalink: /cv/
+description: Curriculum vitae of Lynne Kiesling.
+---
+<h1>Curriculum Vitae</h1>
+<p><a class="button" href="{{ site.cv_pdf }}">Download CV (PDF) · {{ site.cv_date }}</a></p>
+
+<h2>Education</h2>
+<ul class="plain">
+  {% for e in appointments.education %}<li>{{ e.title }} <span class="dates">· {{ e.dates }}</span></li>{% endfor %}
+</ul>
+
+<h2>Current appointments</h2>
+<ul class="plain">
+  {% for a in appointments.current %}
+  <li>
+    <span class="item-title">{{ a.org }}</span>
+    {% for r in a.roles %}<span class="item-desc">{{ r.title }} <span class="dates">· {{ r.dates }}</span></span>{% endfor %}
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Selected past appointments</h2>
+<ul class="plain">
+  {% for a in appointments.past %}<li>{{ a.title }} <span class="dates">· {{ a.dates }}</span></li>{% endfor %}
+</ul>
+
+<h2>Selected awards and honors</h2>
+<ul class="plain">
+  {% for a in appointments.awards %}<li>{{ a.title }} <span class="dates">· {{ a.dates }}</span></li>{% endfor %}
+</ul>

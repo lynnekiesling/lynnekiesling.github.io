@@ -1,0 +1,22 @@
+{#- Renders one reference. Expects a variable named `item`.
+    Article/chapter style:  Authors. Year. “Title.” Venue vol, note.
+    Book style (kind: book): Authors. Year. Title. Detail.
+    Plain style (kind: plain): Authors. Year. Title. Venue. Detail. -#}
+<li class="ref">
+  {%- if item.authors %}{{ item.authors }}. {% endif -%}
+  {%- if item.year %}{{ item.year }}. {% endif -%}
+  {%- if item.kind == "book" -%}
+    {%- if item.url %}<a href="{{ item.url }}" rel="noopener"><em>{{ item.title }}</em></a>{% else %}<em>{{ item.title }}</em>{% endif %}.
+    {%- if item.detail %} {{ item.detail }}.{% endif -%}
+  {%- elif item.kind == "plain" -%}
+    {%- if item.url %}<a href="{{ item.url }}" rel="noopener"><em>{{ item.title }}</em></a>{% else %}<em>{{ item.title }}</em>{% endif %}.
+    {%- if item.detail %} {{ item.detail }}.{% endif -%}
+  {%- else -%}
+    {%- if item.url %}“<a href="{{ item.url }}" rel="noopener">{{ item.title }}</a>.”{% else %}“{{ item.title }}.”{% endif -%}
+    {%- if item.venue %} <em>{{ item.venue }}</em>{% endif -%}
+    {%- if item.vol %} {{ item.vol }}{% endif -%}
+    {%- if item.note %}{% if item.venue %},{% endif %} {{ item.note }}{% endif -%}
+    {%- if item.venue or item.vol or item.note %}.{% endif -%}
+    {%- if item.detail %} {{ item.detail | safe }}.{% endif -%}
+  {%- endif -%}
+</li>

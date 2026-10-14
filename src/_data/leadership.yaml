@@ -1,0 +1,35 @@
+# Workshops directed, plus editorial / society / working-group leadership.
+workshops:
+  - { title: "IRLE Annual Workshop for State Utility Regulatory Commissioners and Staff", dates: "2018–present", detail: "Aspen Institute" }
+  - { title: "Northwestern Electricity Dialogue, Searle Center, Northwestern University", dates: "2015–2017, 2023–present", detail: "Co-directed with Edward Garvey, 2015-2026" }
+  - { title: "IRLE workshop collaboration with Rocky Mountain Institute", dates: "May–June 2022" }
+  - { title: "Research Roundtable, “Energy Regulation, Technology, and Transaction Costs: Cross-Cutting Perspectives,” Searle Center, Northwestern University", dates: "2016, 2017, 2018, 2019" }
+  - { title: "Energy Research Workshop, “Property Rights, Innovation, and the Structures of Energy,” PERC", dates: "August 2017", detail: "Co-directed with Timothy Fitzgerald" }
+  - { title: "Energy Research Workshop, “Innovation, Decentralization, and Regulation in Energy Markets,” PERC", dates: "July 2016" }
+  - { title: "Research Roundtable, “Energy, Technology, and Institutions,” Searle Center, Northwestern University", dates: "June 2009" }
+
+# Editorial, society, and working-group roles.
+roles_current:
+  - { title: "Guest Co-Editor, Special Issue on IRLE, <em>Energy Journal</em>", dates: "2025–2026" }
+  - { title: "Guest Co-Editor, Special Issue on Ostromian Analysis of Technology, <em>Journal of Institutional Economics</em>", dates: "2024–2026" }
+  - { title: "Member, Task Force, Electricity Market Visions to Support a Reliable and Affordable Grid, Energy Systems Integration Group", dates: "2023–present" }
+  - { title: "Executive Committee member, Public Choice Society", dates: "2017–present" }
+
+roles_past:
+  - { title: "Director, Electricity Technology, Regulation, and Market Design Working Group, American Enterprise Institute", dates: "2023–2025" }
+  - { title: "President, Public Choice Society", dates: "2023–2024" }
+  - { title: "Director of Graduate Student Programs, Public Choice Society", dates: "2017–2022" }
+  - { title: "Member (elected), Executive Board, Society for the Development of Austrian Economics", dates: "2015–2017" }
+  - { title: "Council Member (elected), U.S. Association of Energy Economics", dates: "2009–2011" }
+
+# National / government advisory roles (shown on the Teaching & Advisory page).
+advisory_current:
+  - { title: "Member, Resource-secure Energy Flexibility (REFLEX) Working Group, Lawrence Berkeley National Laboratory", dates: "2026–present" }
+  - { title: "Committee Member, Forum on Informed Investment, Technology, and Policy Pathways for the Electricity System, National Academies of Sciences, Engineering, and Medicine", dates: "2025–2026" }
+  - { title: "Emerita Member, GridWise Architecture Council, U.S. Department of Energy (member 2005–2010)", dates: "2010–present" }
+
+advisory_past:
+  - { title: "Member, Electricity Advisory Committee, U.S. Department of Energy", dates: "2021–2025" }
+  - { title: "Leader, Transactions and Markets Sub-Task, Global Observatory on P2P and Transactive Energy, International Energy Agency", dates: "2019–2023" }
+  - { title: "Expert Advisory Council, Americans for a Clean Energy Grid", dates: "2018–2023" }
+  - { title: "Member, Smart Grid Advisory Committee, National Institute of Standards & Technology", dates: "2017–2019" }

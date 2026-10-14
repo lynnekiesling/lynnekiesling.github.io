@@ -1,0 +1,32 @@
+---
+layout: base.njk
+title: Leadership & Convening
+permalink: /leadership/
+description: Workshops directed and editorial, society, and working-group leadership by Lynne Kiesling.
+---
+<h1>Leadership &amp; Convening</h1>
+<p class="page-intro">Workshops, dialogues, and editorial and professional leadership connecting academic research to regulatory practice. For recordings of talks and presentations, see her <a href="https://www.youtube.com/channel/UCMpfDsqBQtAUysp-Ohyx6Jw" rel="noopener">YouTube channel</a>; for ongoing writing, <a href="https://knowledgeproblem.com">Knowledge Problem</a>.</p>
+
+<h2>Workshops and events directed</h2>
+<ul class="plain">
+  {% for w in leadership.workshops %}
+  <li>{{ w.title }} <span class="dates">· {{ w.dates }}</span>{% if w.detail %}<span class="item-desc meta">{{ w.detail }}</span>{% endif %}</li>
+  {% endfor %}
+</ul>
+
+<h2>Editorial, society, and working-group leadership</h2>
+<ul class="plain">
+  {% for r in leadership.roles_current %}
+  <li>{{ r.title | safe }} <span class="dates">· {{ r.dates }}</span></li>
+  {% endfor %}
+</ul>
+<details>
+  <summary>Past roles</summary>
+  <ul class="plain">
+    {% for r in leadership.roles_past %}
+    <li>{{ r.title | safe }} <span class="dates">· {{ r.dates }}</span></li>
+    {% endfor %}
+  </ul>
+</details>
+
+<p class="meta" style="margin-top:2rem">National and government advisory roles are listed under <a href="/teaching/">Teaching &amp; Advisory</a>.</p>
